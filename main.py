@@ -13,7 +13,7 @@ def calculator():
         #turns the square root symbol to something that can be evaluated in python
         expression = expression.replace('√', 'math.sqrt(') + ')'
 
-        #evaluates the given inputs
+        #evaluates the given input
         try:
             result = eval(expression)
             print(f"The result is: {result}")
